@@ -34,9 +34,11 @@
 - Used to help optimize NN perdictions
 
 
-
-
-
 ## Whats been stared:
-- Chess Engine
+- Chess Board -> Acts as a generator for valid moves
 - Chess NN
+
+
+## What we still need:
+- Engine -> List of possible moves and best move
+  - Search algo
