@@ -18,9 +18,10 @@ class ChessDataSet(dataset):
 # Here is where the NN will be built
 class ChessNN(nn.Module):
     def __init__(self):
+        return
 
 
 
-
-
+    def forward(self):
+        return
 

@@ -42,3 +42,5 @@
 ## What we still need:
 - Engine -> List of possible moves and best move
   - Search algo
+    - Minimax
+    - MCTS -> implememt later after MInimax
