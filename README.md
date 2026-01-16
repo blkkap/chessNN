@@ -32,3 +32,11 @@
 
 # Loss Function
 - Used to help optimize NN perdictions
+
+
+
+
+
+## Whats been stared:
+- Chess Engine
+- Chess NN
