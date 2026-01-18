@@ -49,16 +49,17 @@ with open('data/lichess_db_standard_rated_2025-12.pgn', 'r') as f:
     
     def read_games(data):
         while True:
-            game = file.parse(data.read())
-            if game is None:
+            g = file.parse(data.read())
+            if g is None:
                 break
-            yield game
+            yield g
 
-    for idx, game in enumerate(read_games(f)):
+    for idx, g in enumerate(read_games(f)):
         if idx < 10:
-            games.append(game)
+
+            games.append(g)
         else:
             break
-for game in games:
+for g in games:
     print(game)
 
