@@ -16,13 +16,19 @@
   - Knight
   - Bishop
   - Queen
-  - King
+  - King : old thought process
+
+
+
+: new thought process
+
+- other players moves
 
 ## Hidden Layer
-- Calculations made based off associated weight and basis 
+- Calculations made based off associated weight and basis based off input features 
 
 ## Output layer
-- Output Move
+- Output user player best move responding to input feature
 
 
 
@@ -36,7 +42,7 @@
 
 ## Whats been stared:
 - Chess Board -> Acts as a generator for valid moves
-- Chess NN
+- Chess NN : Starting over 
 
 
 ## What we still need:
@@ -44,3 +50,20 @@
   - Search algo
     - Minimax
     - MCTS -> implememt later after MInimax
+
+
+
+
+# Everything above is garbage... well not everything
+
+## TODO LIST
+- figure out how chess engines work and if the above is possible
+- get dataset
+  - clean dataset
+- set features
+- Build NN
+- Optimizer/loss
+- Train loop
+- train/test'
+- Eval (maybe)
+
