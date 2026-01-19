@@ -26,7 +26,7 @@ def generate_train_set(numLines=None):
                             print("-----------",res)
                     print(board,"\n")
 
-
+'''
 def test_data(x=None):
     with open('data/lichess_db_standard_rated_2019-05.pgn') as pgn:
         games = []
@@ -48,8 +48,10 @@ def test_data(x=None):
             print(games)
             print(board)
 
+'''
 
 
 if __name__ == "__main__":
-   test_data(2)
-    # generate_train_set(3)
+
+  # test_data(2)
+    generate_train_set(3)
