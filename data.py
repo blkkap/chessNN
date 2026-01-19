@@ -11,21 +11,20 @@ def generate_train_set(numLines=None):
                 game = chess.pgn.read_game(pgn)
                 if game is None:
                     break
-                games.append(game)
-                for j in games:
-
-                    res = j.headers['Result']
-                    if res not in values:
-                        continue
-                    value = values[res]
-                    board = j.board()
+                print(game)
+                res = game.headers['Result']
+                if res not in values:
+                    continue
+                value = values[res]
+                board = game.board()
             
-                    for move in j.mainline_moves():
-                        board.push(move)
-                        if (board.is_game_over()):
-                            print("-----------",res)
-                    print(board,"\n")
-                    print(board.fen())
+                for move in game.mainline_moves():
+                    board.push(move)
+                    if (board.is_game_over()):
+                        print("-----------",res)
+                print(board,"\n")
+                print(board.fen())
+
 
 '''
 def test_data(x=None):
@@ -55,4 +54,4 @@ def test_data(x=None):
 if __name__ == "__main__":
 
   # test_data(2)
-    generate_train_set(3)
+    generate_train_set(1)
