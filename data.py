@@ -25,8 +25,10 @@ def generate_train_set(numLines=None):
                         if (board.is_game_over()):
                             print("-----------",res)
                     print(board,"\n")
+                    print(board.fen())
 
 
+'''
 def test_data(x=None):
     with open('data/lichess_db_standard_rated_2019-05.pgn') as pgn:
         games = []
@@ -36,10 +38,10 @@ def test_data(x=None):
             if game is None:
                 break
             games.append(game)
+            print(games)
+    
             for s in games:
-
-                ga = StringIO(games) 
-                g = chess.pgn.read_game(ga)
+                g = chess.pgn.read_game(s)
                 g.headers['Result']
                 board = g.board()
                 for move in g.main_line():
@@ -48,8 +50,10 @@ def test_data(x=None):
             print(games)
             print(board)
 
+'''
 
 
 if __name__ == "__main__":
-   test_data(2)
-    # generate_train_set(3)
+    
+   #test_data(2)
+    generate_train_set(3)
