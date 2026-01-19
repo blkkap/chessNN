@@ -54,4 +54,4 @@ def test_data(x=None):
 if __name__ == "__main__":
 
   # test_data(2)
-    generate_train_set(1)
+    generate_train_set(3)
