@@ -25,9 +25,14 @@ def generate_train_set(numLines=None):
                         if (board.is_game_over()):
                             print("-----------",res)
                     print(board,"\n")
+<<<<<<< HEAD
                     print(board.fen())
 
 
+=======
+                    print(board.chess.STARTING_FEN())
+
+>>>>>>> 507d6b4cf913e64f0bb192a257c17830a6489755
 '''
 def test_data(x=None):
     with open('data/lichess_db_standard_rated_2019-05.pgn') as pgn:
@@ -54,6 +59,11 @@ def test_data(x=None):
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     
    #test_data(2)
+=======
+
+  # test_data(2)
+>>>>>>> 507d6b4cf913e64f0bb192a257c17830a6489755
     generate_train_set(3)
