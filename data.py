@@ -25,6 +25,7 @@ def generate_train_set(numLines=None):
                         if (board.is_game_over()):
                             print("-----------",res)
                     print(board,"\n")
+                    print(board.chess.STARTING_FEN())
 
 '''
 def test_data(x=None):
